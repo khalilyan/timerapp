@@ -2,15 +2,18 @@ import './App.css';
 import { useState } from 'react'
 import TimerDisplay from './Components/TimerDisplay';
 import Buttons from './Components/Buttons';
-
+import Item from './Components/Item';
+import { memo } from 'react';
 function App() {
   const [timer, setTimer] = useState({ms:0, s:0, m:0, h:0})
   const [status,setStatus] = useState(0)
   const [interv,setInterv] = useState()
+  const [list,setList] = useState([])
+
   let update_ms = timer.ms,
-  update_s = timer.ms,
-  update_m = timer.ms,
-  update_h = timer.ms;
+  update_s = timer.s,
+  update_m = timer.m,
+  update_h = timer.h;
  
 
   function run(){
@@ -50,14 +53,19 @@ function reset(){
   setInterv(setInterval(run,10))
  }
  function add(){
-  console.log(update_ms,update_s,update_m,update_h)
- }
+  setList([...list,[update_h,update_m,update_s,update_ms,Math.random()]])
+   
+}
 
   return (
     <div className="App">
       <TimerDisplay ms={timer.ms} s={timer.s} m={timer.m} h={timer.h}/>
       <Buttons status={status} start={start} pause={stop} resume={resume} reset={reset} add={add}/>
-      
+      {
+        list.map((fix)=>{
+          return <li type="1"> Round <Item h={fix[0]} m={fix[1]} s={fix[2]} ms={fix[3]} key={fix[4]}/>  </li>
+        })
+      }
     </div>
   );
 }

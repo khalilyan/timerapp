@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { memo } from 'react'
 
-export default function TimerDisplay({ms,s,m,h}) {
+export default memo(function TimerDisplay({ms,s,m,h}) {
 
   return (
     <div>
@@ -10,4 +10,4 @@ export default function TimerDisplay({ms,s,m,h}) {
         <span>{(ms>=10)?ms:"0"+ms}</span> 
     </div>
   )
-}
+})
