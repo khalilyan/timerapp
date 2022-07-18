@@ -1,0 +1,86 @@
+.BtnContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#start{
+    background: rgb(187, 230, 255);
+    cursor: pointer;
+    color: rgb(34, 203, 0);
+    height: 50px;
+    width: 100px;
+    font-size: 20px;
+    border: 1px solid  rgb(13, 112, 0)
+
+}
+#start:hover{
+    background: rgba(71, 201, 0, 0.667);
+    box-shadow: 1px 1px 12px rgb(130, 255, 63);
+    border: 0px solid  rgb(13, 112, 0);
+    color: rgb(70, 70, 70);
+}
+#pause{
+    background: rgb(187, 230, 255);
+    cursor: pointer;
+    color: rgb(142, 152, 0);
+    height: 50px;
+    width: 100px;
+    font-size: 20px;
+    border: 1px solid  rgb(133, 138, 0)
+
+}
+#pause:hover{
+    background: rgba(157, 201, 0, 0.667);
+    box-shadow: 1px 1px 12px rgb(157, 201, 0);
+    border: 0px solid  rgb(229, 255, 0);
+    color: rgb(70, 70, 70);
+}
+#resume{
+    background: rgb(187, 230, 255);
+    cursor: pointer;
+    color: rgb(0, 72, 206);
+    height: 50px;
+    width: 100px;
+    font-size: 20px;
+    border: 1px solid  rgb(0, 81, 124)
+
+}
+#resume:hover{
+    background: rgba(0, 198, 201, 0.667);
+    box-shadow: 1px 1px 12px rgb(63, 236, 255);
+    border: 0px solid  rgb(13, 112, 0);
+    color: rgb(70, 70, 70);
+}
+#reset{
+    background: rgb(187, 230, 255);
+    cursor: pointer;
+    color: rgb(155, 0, 0);
+    height: 50px;
+    width: 100px;
+    font-size: 20px;
+    border: 1px solid  rgb(113, 0, 0)
+
+}
+#reset:hover{
+    background: rgba(255, 0, 0, 0.642);
+    box-shadow: 1px 1px 12px rgb(255, 11, 11);
+    border: 0px solid  rgb(13, 112, 0);
+    color: rgb(70, 70, 70);
+}
+#add{
+    background: rgb(187, 230, 255);
+    cursor: pointer;
+    color: rgb(0, 150, 13);
+    height: 50px;
+    width: 100px;
+    font-size: 20px;
+    border: 1px solid  rgb(25, 98, 0)
+
+}
+#add:hover{
+    background: rgba(89, 255, 0, 0.667);
+    box-shadow: 1px 1px 12px rgb(98, 255, 13);
+    border: 0px solid  rgb(13, 112, 0);
+    color: rgb(70, 70, 70);
+}

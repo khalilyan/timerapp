@@ -1,1 +1,12 @@
- 
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(187, 230, 255);
+    color: rgb(0, 0, 0);
+  }
+  .App{
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+  }

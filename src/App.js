@@ -3,19 +3,19 @@ import { useState } from 'react'
 import TimerDisplay from './Components/TimerDisplay';
 import Buttons from './Components/Buttons';
 import Item from './Components/Item';
-import { memo } from 'react';
 function App() {
+  //state
   const [timer, setTimer] = useState({ms:0, s:0, m:0, h:0})
   const [status,setStatus] = useState(0)
   const [interv,setInterv] = useState()
   const [list,setList] = useState([])
-
+  //time variables
   let update_ms = timer.ms,
   update_s = timer.s,
   update_m = timer.m,
   update_h = timer.h;
  
-
+ //functions
   function run(){
     if(update_m === 60){
       update_h++;
@@ -47,6 +47,7 @@ function reset(){
   clearInterval(interv)
   setStatus(0)
   setTimer({ms:0, s:0, m:0, h:0})
+  setList([])
 }
  function resume(){
   setStatus(1)
