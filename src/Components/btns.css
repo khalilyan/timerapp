@@ -2,6 +2,7 @@
 
 #start{
     background: rgb(187, 230, 255);
+    border-radius: 10px;
     cursor: pointer;
     color: rgb(0, 0, 0);
     height: 110px;
@@ -20,10 +21,11 @@
 }
 #pause{
     background: rgb(187, 230, 255);
+    border-radius: 20px;
     cursor: pointer;
     color: rgb(142, 152, 0);
-    height: 50px;
-    width: 100px;
+    height: 80px;
+    width: 160px;
     font-size: 20px;
     border: 1px solid  rgb(133, 138, 0);
     margin-right: 10px;
@@ -38,11 +40,12 @@
     color: rgb(255, 255, 255);
 }
 #resume{
+    border-radius: 20px;
     background: rgb(187, 230, 255);
     cursor: pointer;
     color: rgb(0, 72, 206);
-    height: 50px;
-    width: 100px;
+    height: 80px;
+    width: 160px;
     font-size: 20px;
     border: 1px solid  rgb(0, 81, 124);
     margin-right: 10px;
@@ -57,10 +60,11 @@
 }
 #reset{
     background: rgb(187, 230, 255);
+    border-radius: 20px;
     cursor: pointer;
     color: rgb(155, 0, 0);
-    height: 50px;
-    width: 100px;
+    height: 80px;
+    width: 160px;
     font-size: 20px;
     border: 1px solid  rgb(113, 0, 0);
     margin-right: 10px;
@@ -75,14 +79,15 @@
 }
 #add{
     background: rgb(187, 230, 255);
+    border-radius: 20px;
     cursor: pointer;
     color: rgb(0, 150, 13);
-    height: 50px;
-    width: 100px;
+    height: 80px;
+    width: 160px;
     font-size: 20px;
     border: 1px solid  rgb(25, 98, 0);
     transition: 0.2s
-
+    
 }
 #add:hover{
     background: rgba(89, 255, 0, 0.667);

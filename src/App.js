@@ -9,6 +9,7 @@ function App() {
   const [status,setStatus] = useState(0)
   const [interv,setInterv] = useState()
   const [list,setList] = useState([])
+  const [mode,setMode] = useState(true)
   //time variables
   let update_ms = timer.ms,
   update_s = timer.s,
@@ -62,6 +63,7 @@ function reset(){
     <div className="Controls">
 
       <div className='Control-header'>
+              
       <TimerDisplay ms={timer.ms} s={timer.s} m={timer.m} h={timer.h}/>
       <Buttons status={status} start={start} pause={stop} resume={resume} reset={reset} add={add}/>
       </div>
