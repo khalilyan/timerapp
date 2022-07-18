@@ -25,7 +25,7 @@ function App() {
       update_m++
       update_s=0
     }
-    if(update_ms === 100){
+    if(update_ms === 99){
       update_s++
       update_ms=0
     }
@@ -59,14 +59,23 @@ function reset(){
 }
 
   return (
-    <div className="App">
+    <div className="Controls">
+
+      <div className='Control-header'>
       <TimerDisplay ms={timer.ms} s={timer.s} m={timer.m} h={timer.h}/>
       <Buttons status={status} start={start} pause={stop} resume={resume} reset={reset} add={add}/>
+      </div>
+    <div className='Control-conteiner'>
+
+      <div className='Lists'>
       {
-        list.map((fix)=>{
-          return <li type="1"> Round <Item h={fix[0]} m={fix[1]} s={fix[2]} ms={fix[3]} key={fix[4]}/>  </li>
+        list.map((fix, indecx)=>{
+          return  <li key={fix[4]}  className='Lists-item'> {indecx + 1 }.<Item  h={(fix[0]>=10) ? fix[0] : "0" + fix[0]} m={(fix[1]>=10) ? fix[1] : "0" + fix[1]} s={(fix[2]>=10) ? fix[2] : "0" + fix[2]} ms={(fix[3]>=10) ? fix[3] : "0" + fix[3]} /> </li>
         })
       }
+      </div>
+    </div>
+
     </div>
   );
 }
