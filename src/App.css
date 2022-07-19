@@ -125,3 +125,94 @@
     zoom: 150%;
     color: black; 
   }
+  @media (max-width:713px){
+    #light .Lists-item{
+      gap: 50px;
+      font-size: 40px;
+    }
+  }
+  @media (max-width:713px){
+    #dark .Lists-item{
+      gap: 50px;
+      font-size: 40px;
+    }
+  }
+  @media (max-width:550px){
+    #light .Lists-item{
+      gap: 50px;
+      font-size: 30px;
+    }
+  }
+  @media (max-width:550px){
+    #dark .Lists-item{
+      gap: 50px;
+      font-size: 30px;
+    }
+  }
+  @media (max-width:434px){
+    #light .Lists-item{
+      gap: 30px;
+      font-size: 25px;
+    }
+  }
+  @media (max-width:434px){
+    #dark .Lists-item{
+      gap: 30px;
+      font-size: 25px;
+    }
+  }
+  @media (max-width:357px){
+    #light .Lists-item{
+      gap: 20px;
+      font-size: 25px;
+    }
+  }
+  @media (max-width:357px){
+    #dark .Lists-item{
+      gap: 20px;
+      font-size: 25px;
+    }
+  }
+  @media (max-width:357px){
+    #light .Lists-item{
+      gap: 20px;
+      font-size: 25px;
+    }
+  }
+  @media (max-width:347px){
+    #light .Lists-item{
+      gap: 10px;
+      font-size: 23px;
+    }
+  }
+  @media (max-width:347px){
+    #dark .Lists-item{
+      gap: 10px;
+      font-size: 23px;
+    }
+  }
+  @media (max-width:314px){
+    #light {
+      display: none
+    }
+  } 
+  @media (max-width:473px){
+    #light .Control-header:nth-child(2){
+        font-size: 40px;
+    }
+  }
+  @media (max-width:473px){
+    #dark .Control-header:nth-child(2){
+        font-size: 40px;
+    }
+  }
+  @media (max-width:404px){
+    #light .Control-header:nth-child(2){
+        font-size: 37px;
+    }
+  }
+  @media (max-width:404px){
+    #dark .Control-header:nth-child(2){
+        font-size: 37px;
+    }
+  }
