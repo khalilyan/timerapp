@@ -1,9 +1,8 @@
-body { 
-    background-color: rgb(187, 230, 255);
-    color: rgb(0, 0, 0);
-
-  }
-  .Control-header{
+*{
+  margin: 0;
+  bottom: 0;
+}
+#light .Control-header{
     height: 50vh;
     display: flex;
     flex-direction: column;
@@ -11,17 +10,17 @@ body {
     justify-content: center;
     
   }
-  .Control-header:nth-child(1){
+  #light .Control-header:nth-child(2){
     gap: 70px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
-  .Control-conteiner{
+  #light .Control-conteiner{
     min-height: 50vh;
     width: 100%;
     display: flex;
     flex-direction: column;
   }
-  .Lists{
+  #light .Lists{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -31,9 +30,9 @@ body {
   }
   
   
-  .Controls{
+  #light{
     
-      
+    background-color: rgb(187, 230, 255);
       display: flex;
       flex-wrap: nowrap;
     flex-direction: column;
@@ -42,7 +41,7 @@ body {
     font-size: 50px;
     font-family: 'Courier New', Courier, monospace;
   }
-  .Lists-item{
+  #light .Lists-item{
     display: flex;
     border: 1px solid black;
     gap: 100px;
@@ -52,8 +51,77 @@ body {
     padding: 10px;
     opacity: 0.6;
   }
-  .Lists-item:hover {
+  #light .Lists-item:hover {
     opacity: 1;
   }
+ /* dark mode */
+  #dark{
+    background-color: rgb(0, 0, 0);
+    color: rgb(212, 210, 210);
+      display: flex;
+      flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+  }
 
-  
+  #dark .Lists{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(103, 95, 135, 0.694);
+    border-radius: 50px;
+    box-shadow: 1px 1px 7px white;
+  }
+  #dark .Control-header{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  #dark .Control-header:nth-child(2){
+    gap: 70px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 1px 1px 14px rgb(0, 60, 139);
+  }
+  #dark .Control-conteiner{
+    min-height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  #dark .Lists-item{
+    display: flex;
+    border: 1px solid rgb(255, 255, 255);
+    gap: 100px;
+    background-color: rgb(25, 24, 37);
+    border-radius: 50px;
+    margin: 10px;
+    padding: 10px;
+    opacity: 0.6;
+  }
+  #dark .Lists-item:hover {
+    opacity: 1;
+  }
+  #light .Switch{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color:rgb(187, 230, 255);
+    padding-top: 40px;
+    zoom: 150%;    
+  }
+ #dark .Switch{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: black;
+    padding-top: 40px;
+    zoom: 150%;
+    color: black; 
+  }
